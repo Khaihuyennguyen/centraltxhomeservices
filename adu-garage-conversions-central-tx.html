@@ -72,37 +72,93 @@
       <div class="calc-card">
         <h2 class="calc-title">Free ADU Feasibility Check</h2>
         <p class="calc-subtitle">Find out if your property qualifies for an ADU or conversion.</p>
-        <form id="lead-quote-form">
-          <div class="form-group">
-            <label class="form-label">Type of Project</label>
-            <select class="form-select" id="calc-service">
-              <option value="adu-garage">Attached Garage Conversion (400-600 sq ft)</option>
-              <option value="adu-garage">Detached New Build ADU (600-1100 sq ft)</option>
-              <option value="adu-garage">Backyard Granny Flat / Studio</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">City Location</label>
-            <select class="form-select" id="lead-city">
-              <option value="Austin">Austin, TX</option>
-              <option value="Waco">Waco, TX</option>
-              <option value="Temple">Temple, TX</option>
-              <option value="Round Rock">Round Rock / Georgetown</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Your Full Name</label>
-            <input type="text" class="form-input" id="lead-name" placeholder="Sarah Johnson" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Phone Number</label>
-            <input type="tel" class="form-input" id="lead-phone" placeholder="(254) 555-0123" required>
-          </div>
-          <div class="price-output-box" style="display:none;">
-            <div id="calc-price-output">$60,000 - $145,000</div>
-          </div>
-          <button type="submit" class="btn-cta" style="width: 100%; justify-content: center; padding: 14px;">📩 Request Feasibility Call</button>
-        </form>
+        <!-- AgenticAgency AI Lead Form -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+<style>
+.alf-lead-form-central-tx-home-services-lead{box-sizing:border-box;max-width:440px;margin:24px auto;padding:32px 28px 28px;background:#fff;border:1px solid #e6e6ee;border-radius:14px;box-shadow:0 1px 2px rgba(20,20,40,0.04),0 12px 32px -8px rgba(20,20,40,0.12);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#111827;}
+.alf-lead-form-central-tx-home-services-lead *,.alf-lead-form-central-tx-home-services-lead *::before,.alf-lead-form-central-tx-home-services-lead *::after{box-sizing:inherit;}
+.alf-lead-form-central-tx-home-services-lead .alf-title{margin:0 0 4px;font-size:20px;font-weight:700;letter-spacing:-0.01em;color:#0f172a;}
+.alf-lead-form-central-tx-home-services-lead .alf-sub{margin:0 0 22px;font-size:14px;line-height:1.5;color:#6b7280;}
+.alf-lead-form-central-tx-home-services-lead label{display:block;margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:0.04em;color:#374151;text-transform:uppercase;}
+.alf-lead-form-central-tx-home-services-lead input{display:block;width:100%;padding:12px 14px;margin-top:6px;background:#f9fafb;border:1px solid #d1d5db;border-radius:8px;color:#111827;font:inherit;font-size:15px;font-weight:400;letter-spacing:normal;text-transform:none;-webkit-appearance:none;appearance:none;transition:border-color .15s,background .15s,box-shadow .15s;}
+.alf-lead-form-central-tx-home-services-lead input::placeholder{color:#9ca3af;}
+.alf-lead-form-central-tx-home-services-lead input:hover{background:#fff;border-color:#9ca3af;}
+.alf-lead-form-central-tx-home-services-lead input:focus{outline:none;background:#fff;border-color:#5432f5;box-shadow:0 0 0 3px rgba(84,50,245,0.18);}
+.alf-lead-form-central-tx-home-services-lead .iti{display:block;width:100%;margin-top:6px;}
+.alf-lead-form-central-tx-home-services-lead .iti input[type=tel]{margin-top:0;padding-left:96px;}
+.alf-lead-form-central-tx-home-services-lead .iti__country-list{z-index:10000;font-family:inherit;font-size:14px;text-transform:none;letter-spacing:normal;color:#111827;}
+.alf-lead-form-central-tx-home-services-lead .iti__country{padding:6px 10px;}
+.alf-lead-form-central-tx-home-services-lead .iti__selected-flag{padding:0 8px 0 12px;}
+.alf-lead-form-central-tx-home-services-lead button{margin-top:6px;padding:13px 20px;width:100%;background:#5432f5;color:#fff;border:0;border-radius:8px;font:inherit;font-size:15px;font-weight:600;letter-spacing:0.01em;cursor:pointer;box-shadow:0 1px 2px rgba(84,50,245,0.2),0 4px 12px rgba(84,50,245,0.25);transition:background .15s,box-shadow .15s,transform .08s;}
+.alf-lead-form-central-tx-home-services-lead button:hover{background:#4324e0;box-shadow:0 2px 4px rgba(84,50,245,0.25),0 8px 20px rgba(84,50,245,0.3);}
+.alf-lead-form-central-tx-home-services-lead button:active{transform:translateY(1px);}
+.alf-lead-form-central-tx-home-services-lead button:disabled{opacity:.6;cursor:not-allowed;}
+.alf-lead-form-central-tx-home-services-lead .alf-msg{margin-top:12px;min-height:18px;font-size:13px;line-height:1.5;color:#4b5563;text-align:center;}
+.alf-lead-form-central-tx-home-services-lead .alf-msg.alf-ok{color:#059669;}
+.alf-lead-form-central-tx-home-services-lead .alf-msg.alf-err{color:#dc2626;}
+</style>
+<form class="alf-lead-form-central-tx-home-services-lead" onsubmit="return alfSubmit_centraltxhomeserviceslead(event)" novalidate>
+  <h3 class="alf-title">Get a callback in seconds</h3>
+  <p class="alf-sub">Drop your details — our AI will reach out shortly.</p>
+  <label>Name <input name="name" type="text" placeholder="Jane Doe" required></label>
+  <label>Email <input name="email" type="email" placeholder="jane@example.com" required></label>
+  <label>Phone <input id="alfPhone_centraltxhomeserviceslead" name="phone" type="tel" autocomplete="tel" placeholder="Phone number"></label>
+  <button type="submit">Submit</button>
+  <div class="alf-msg" aria-live="polite"></div>
+</form>
+<script>
+(function(){
+  var ITI_BASE='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8';
+  var phone=document.getElementById('alfPhone_centraltxhomeserviceslead');
+  if(!phone)return;
+  function init(){
+    if(phone.dataset.alfItiReady||!window.intlTelInput)return;
+    try{
+      var iti=window.intlTelInput(phone,{
+        preferredCountries:['us','gb','ca','in','au'],
+        separateDialCode:true,
+        initialCountry:'auto',
+        geoIpLookup:function(success){
+          fetch('https://ipapi.co/json/').then(function(r){return r.json();})
+            .then(function(j){success((j&&j.country_code)?j.country_code:'us');})
+            .catch(function(){success('us');});
+        },
+        utilsScript:ITI_BASE+'/js/utils.js'
+      });
+      phone.dataset.alfItiReady='1';
+      window['alfSubmit_centraltxhomeserviceslead__iti']=iti;
+    }catch(e){}
+  }
+  if(window.intlTelInput){init();return;}
+  if(window.__alf_iti_loading){var t=setInterval(function(){if(window.intlTelInput){clearInterval(t);init();}},50);return;}
+  window.__alf_iti_loading=true;
+  var s=document.createElement('script');s.src=ITI_BASE+'/js/intlTelInput.min.js';s.async=true;
+  s.onload=init;document.head.appendChild(s);
+})();
+function alfSubmit_centraltxhomeserviceslead(e){
+  e.preventDefault();
+  var f=e.target,btn=f.querySelector('button[type=submit]'),msg=f.querySelector('.alf-msg'),fd=new FormData(f);
+  var iti=window['alfSubmit_centraltxhomeserviceslead__iti'];
+  if(iti && iti.getSelectedCountryData){
+    var dial=(iti.getSelectedCountryData().dialCode)||'';
+    if(dial)fd.append('select_country',dial);
+  }
+  fd.append('source','html_form');
+  fd.append('user_timezone',Intl.DateTimeFormat().resolvedOptions().timeZone||'');
+  fd.append('url',location.href);
+  msg.className='alf-msg';msg.textContent='Submitting…';
+  if(btn){btn.disabled=true;}
+  fetch('https://agenticagencyapp.com/widget/submit/central-tx-home-services-lead',{method:'POST',body:fd,mode:'cors'})
+    .then(function(r){return r.json();}).then(function(j){
+      var ok=j&&j.status==1;
+      msg.className='alf-msg '+(ok?'alf-ok':'alf-err');
+      msg.textContent=ok?'Thanks! We will be in touch.':((j&&j.message)||'Something went wrong.');
+      if(ok)f.reset();
+    }).catch(function(){msg.className='alf-msg alf-err';msg.textContent='Network error.';})
+    .then(function(){if(btn){btn.disabled=false;}});
+  return false;
+}
+</script>
       </div>
     </div>
   </header>
