@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central Texas Home Services | Drywall Repair & ADUs in Temple, Waco & Austin</title>
+  <meta name="description" content="Top-rated local home services in Central Texas. Fast drywall & sheetrock repair in Temple & Waco, plus custom ADU garage conversions. Call now for a free quote!">
+  <meta name="google-site-verification" content="e1a19ewBSkEWibbxe32N93eeFi6saxAaK75YgszN314" />
+  <link rel="stylesheet" href="index.css">
+
+  <!-- JSON-LD LocalBusiness & GEO Entity Schema for Google & ChatGPT Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Central Texas Home Services & Repair Co.",
+    "url": "https://centraltexashomeservices.com",
+    "telephone": "+1-254-555-0199",
+    "areaServed": [
+      { "@type": "City", "name": "Temple, TX" },
+      { "@type": "City", "name": "Waco, TX" },
+      { "@type": "City", "name": "Belton, TX" },
+      { "@type": "City", "name": "Hewitt, TX" },
+      { "@type": "City", "name": "Austin, TX" }
+    ],
+    "priceRange": "$$",
+    "knowsAbout": [
+      "Drywall Repair",
+      "Sheetrock Patching",
+      "Water Damage Ceiling Repair",
+      "ADU Construction",
+      "Garage Conversions",
+      "Home Remodeling"
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.0982,
+      "longitude": -97.3428
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Emergency Alert Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <span class="badge-live">LIVE DISPATCH</span>
+      <span>Same-Day Contractors Available in Temple, Waco & Belton</span>
+    </div>
+    <a href="tel:2545550199" class="top-bar-phone">
+      📞 (254) 555-0199
+    </a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        CentralTX <span>HomeServices</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="drywall-repair-temple-waco.html" class="nav-link">Drywall & Sheetrock</a></li>
+        <li><a href="adu-garage-conversions-central-tx.html" class="nav-link">ADUs & Conversions</a></li>
+        <li><a href="#faq" class="nav-link">FAQ & Pricing</a></li>
+      </ul>
+      <a href="tel:2545550199" class="btn-cta">
+        📞 Call (254) 555-0199
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section & Interactive Quote Estimator -->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="city-tags">
+          <span class="city-tag">📍 Temple, TX</span>
+          <span class="city-tag">📍 Waco, TX</span>
+          <span class="city-tag">📍 Belton, TX</span>
+          <span class="city-tag">📍 Hewitt, TX</span>
+          <span class="city-tag">📍 North Austin</span>
+        </div>
+        <h1>#1 Rated Local <span class="hero-highlight">Drywall Repair</span> & Home Additions in Central Texas</h1>
+        <p class="hero-subtitle">Fast, licensed local contractors for emergency sheetrock patching, ceiling water damage repair, and high-value garage conversions. Get your 30-second estimate below!</p>
+        
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="tel:2545550199" class="btn-cta" style="padding: 14px 28px; font-size: 1.1rem;">
+            ⚡ Call For Immediate Dispatch
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Calculator Card -->
+      <div class="calc-card">
+        <h2 class="calc-title">30-Second Estimate Calculator</h2>
+        <p class="calc-subtitle">Select your service & project scope for an instant local estimate.</p>
+
+        <form id="lead-quote-form">
+          <div class="form-group">
+            <label class="form-label" for="calc-service">Select Service Category</label>
+            <select class="form-select" id="calc-service">
+              <option value="drywall-repair">Drywall & Sheetrock Repair</option>
+              <option value="water-damage">Water Damage Ceiling Repair</option>
+              <option value="adu-garage">ADU / Garage Conversion</option>
+              <option value="epoxy-floor">Garage Epoxy Floor Coating</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="calc-scope">Project Scope / Room Size</label>
+            <select class="form-select" id="calc-scope">
+              <option value="small">Small Patch / Single Room Repair</option>
+              <option value="medium" selected>Medium Project (2-3 Rooms)</option>
+              <option value="large">Full House / Garage Conversion</option>
+              <option value="custom">Custom Build / Commercial</option>
+            </select>
+          </div>
+
+          <div class="price-output-box">
+            <span class="price-output-label">Estimated Local Project Cost</span>
+            <div class="price-output-value" id="calc-price-output">$450 - $850</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="lead-name">Your Full Name</label>
+            <input type="text" class="form-input" id="lead-name" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="lead-phone">Phone Number (For Instant Call-Back)</label>
+            <input type="tel" class="form-input" id="lead-phone" placeholder="(254) 555-0123" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="lead-city">City Location</label>
+            <select class="form-select" id="lead-city">
+              <option value="Temple">Temple, TX</option>
+              <option value="Waco">Waco, TX</option>
+              <option value="Belton">Belton, TX</option>
+              <option value="Hewitt">Hewitt, TX</option>
+              <option value="Austin">Austin / Round Rock, TX</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-cta" style="width: 100%; justify-content: center; padding: 14px; font-size: 1.05rem;">
+            📩 Lock In Free Estimate
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Core Services Section -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-tag">OUR SPECIALIZED SERVICES</span>
+      <h2 class="section-title">Built For Speed & Quality Across Central Texas</h2>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service Card 1: Fast Cash Engine -->
+      <div class="service-card">
+        <div>
+          <span class="service-badge badge-blue">FAST CASH & REPAIR ENGINE</span>
+          <h3 class="service-title">Drywall & Sheetrock Repair</h3>
+          <p class="service-desc">Expert ceiling patching, hole repair, texturing, and water damage remediation in Temple, Waco, and Belton. Same-day estimates available.</p>
+          
+          <div class="service-metrics">
+            <div class="metric-item">
+              <span class="metric-label">Avg. Turnaround</span>
+              <span class="metric-val">24 - 48 Hours</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Typical Cost</span>
+              <span class="metric-val">$450 - $1,500</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Service Area</span>
+              <span class="metric-val">Temple & Waco</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="drywall-repair-temple-waco.html" class="link-arrow">
+          View Drywall Services & Pricing →
+        </a>
+      </div>
+
+      <!-- Service Card 2: High-Ticket Commission Engine -->
+      <div class="service-card">
+        <div>
+          <span class="service-badge badge-purple">HIGH-TICKET ASSET ENGINE</span>
+          <h3 class="service-title">ADUs & Garage Conversions</h3>
+          <p class="service-desc">Turn underutilized garage space or backyard land into income-producing rental units. Compliant with Austin HOME Initiative & Waco zoning.</p>
+          
+          <div class="service-metrics">
+            <div class="metric-item">
+              <span class="metric-label">Build Timeline</span>
+              <span class="metric-val">60 - 90 Days</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Project Value</span>
+              <span class="metric-val">$60,000 - $180,000</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Service Area</span>
+              <span class="metric-val">Austin & Waco</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="adu-garage-conversions-central-tx.html" class="link-arrow">
+          View ADU Guide & Zoning Limits →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEO & FAQ Section (Structured for ChatGPT / Perplexity Search) -->
+  <section class="section" id="faq">
+    <div class="section-header">
+      <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+      <h2 class="section-title">Everything You Need To Know</h2>
+    </div>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3 class="faq-question">Q: How much does drywall repair cost in Temple and Waco, TX? <span>+</span></h3>
+        <div class="faq-answer">
+          A: Minor drywall patching in Temple and Waco ranges from $250 to $450. Larger ceiling water damage repairs or room-wide sheetrock installation ranges from $850 to $2,500 depending on square footage and texture matching.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Q: How long does a garage conversion or ADU build take in Central Texas? <span>+</span></h3>
+        <div class="faq-answer">
+          A: Garage conversions typically take 45 to 90 days from permit approval to completion. Under Austin's HOME Initiative and local Waco zoning rules, streamlined permitting allows faster construction for units under 1,100 sq ft.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Q: Are your local contractors licensed and insured in Bell & McLennan counties? <span>+</span></h3>
+        <div class="faq-answer">
+          A: Yes. All contractors in our Central Texas network carry full liability insurance and local municipal licensing to operate in Temple, Waco, Belton, Hewitt, and Round Rock.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <div class="footer-brand">Central Texas Home Services & Repair</div>
+        <p>Your trusted local lead engine connecting homeowners with licensed drywall contractors and ADU builders across Temple, Waco, Belton, and North Austin.</p>
+      </div>
+      <div>
+        <h4 style="color:#FFF; margin-bottom:12px;">Quick Links</h4>
+        <ul style="list-style:none; line-height:2;">
+          <li><a href="drywall-repair-temple-waco.html">Drywall Repair Temple & Waco</a></li>
+          <li><a href="adu-garage-conversions-central-tx.html">ADUs & Garage Conversions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#FFF; margin-bottom:12px;">Contact Dispatch</h4>
+        <p>📞 Phone: (254) 555-0199</p>
+        <p>📍 Office: Temple / Waco Corridor, TX</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Central Texas Home Services. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Fixed Mobile Call Button -->
+  <a href="tel:2545550199" class="sticky-mobile-call">
+    📞 Tap To Call (254) 555-0199
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
