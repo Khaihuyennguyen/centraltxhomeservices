@@ -49,7 +49,8 @@ function initCalculator() {
       else { baseMin = 8500; baseMax = 14000; }
     }
 
-    outputEl.textContent = `$${baseMin.toLocaleString()} - $${baseMax.toLocaleString()}`;
+    outputEl.textContent = 'Custom Quote Available (Free Inspection)';
+    outputEl.style.fontSize = '1.25rem';
   }
 
   serviceType.addEventListener('change', calculateEstimate);
