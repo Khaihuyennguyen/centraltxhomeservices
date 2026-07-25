@@ -151,9 +151,8 @@ function alfSubmit_centraltxhomeserviceslead(e){
   fetch('https://agenticagencyapp.com/widget/submit/central-tx-home-services-lead',{method:'POST',body:fd,mode:'cors'})
     .then(function(r){return r.json();}).then(function(j){
       var ok = j && (j.status == 1 || j.status == 11);
-      var text = (j && (j.response || j.message)) ? (j.response || j.message) : 'Thanks! We will be in touch.';
       msg.className = 'alf-msg ' + (ok ? 'alf-ok' : 'alf-err');
-      msg.textContent = text;
+      msg.textContent = ok ? 'Thanks! We received your request — our team will reach out shortly.' : ((j && (j.response || j.message)) || 'Something went wrong.');
       if(ok) f.reset();
     }).catch(function(){msg.className='alf-msg alf-err';msg.textContent='Network error.';})
     .then(function(){if(btn){btn.disabled=false;}});
