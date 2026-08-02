@@ -1,0 +1,45 @@
+# Claude Code / Vibe Skills working files (never commit — contains internal working data)
+brand/
+graphify-out/
+Vibe-Skills-v2-Claude-Code/
+TODO/
+
+# Environment variables and API keys (never commit — contains secrets)
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# Node / package managers
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log and temp files
+*.log
+*.tmp
+tmp/
+temp/
+
+# Build outputs (if you ever add a build step)
+dist/
+build/
+.cache/
+
+# Backup files
+*.bak
+*.backup
