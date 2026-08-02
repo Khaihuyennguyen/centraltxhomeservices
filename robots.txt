@@ -7,4 +7,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://centraltexashomeservices.com/sitemap.xml
+Sitemap: https://centraltxhomeservices.com/sitemap.xml
